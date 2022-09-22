@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>School List</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="heading">School List</h1>
+
+      <header class="header">
+        <form action="#" class="form" method="get" id="form">
+
+          <input required minlength="5" class="form-input" type="text" placeholder="Name" id="user_name">
+          <input required class="form-input" type="text" placeholder="Surname" id="user_surname">
+          <input required class="form-input" type="text" placeholder="Group" id="user_group">
+
+          <select class="form-select" id="user_gender" required>
+            <option value="">Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+
+          <button class="btn" type="submit">Add</button>
+
+
+        </form>
+      </header>
+      <!--- End of header -->
+      <hr>
+
+      <table>
+        <thead id="thead">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Group</th>
+            <th>Gender</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
+
+
+      <template id="template">
+        <tr>
+          <th class="number"></th>
+          <td class="firstname"></td>
+          <td class="lastname"></td>
+          <td class="group"></td>
+          <td class="gender"></td>
+        </tr>
+      </template>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+
+</html>
